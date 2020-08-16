@@ -1,12 +1,64 @@
+.App {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #EEE;
+}
+
+.App .Header {
+    padding: 10px 5px;
+    display: flex;
+    border-bottom: 1px solid #bebebe;
+}
+
+.App .Header input {
+    font-family: 'Helvetica',
+    Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    padding-left: 10px;
+    width: 100%;
+    border: none;
+    margin-left: 10px;
+}
+
+.App .Header input:focus {
+    outline: none;
+}
+
 .Todoitem {
     font-family: 'Helvetica',
     Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: #4d4d4d;
+    border-bottom: 1px solid #bebebe;
+    padding: 0 5px 0;
+    display: flex;
+    align-items: center;
 }
 
-.TodoItem-done {
+.Todoitem:last-child {
+    border-bottom: none ;
+}
+
+.Todoitem > p {
+    margin: 0 0 0 10px;
+    padding: 10px 5px ;
+    border-bottom: 1px solid #EEE;
+    flex-grow: 1;
+}
+
+.TodoItem-done > p {
     text-decoration: line-through;
     opacity: 0.3;
+}
+
+.img {
+   margin-right: 30px;
+   visibility: hidden;
+}
+
+.Todoitem:hover .img{
+    visibility: visible;
 }
